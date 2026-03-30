@@ -1,0 +1,7 @@
+{
+  "name": "Fluppe",
+  "description": "Find cigarette vending machines near you with an atmospheric smoke-themed interface.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

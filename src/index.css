@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-marlboro-red: #C62828;
+  --color-marlboro-dark: #8B1E1E;
+  --color-app-bg: #F5F5F5;
+}
+
+:root {
+  --marlboro-red: #C62828;
+  --marlboro-dark: #8B1E1E;
+}
+
+body {
+  background-color: var(--color-app-bg);
+  color: #212121;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Custom blurred effect for Pro features */
+.pro-blur {
+  filter: blur(8px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.pro-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+/* Smoke animation styles */
+.smoke-layer {
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.15;
+}
+
